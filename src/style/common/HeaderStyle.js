@@ -6,31 +6,34 @@ export const HeaderStyle = styled.div`
   color: #fff;
   position: sticky;
   top: 0;
-  max-height: 53px;
-  padding: 10px 0;
-
+  padding: 20px 0;
   #header {
     display: flex;
     width: 1440px;
-    margin: 0 auto;
-    transition: 0.5s;
-    .logo {
-      font-size: 48px;
-      width: 40%;
-      text-align: center;
-    }
-    .nav {
+    max-height: 50px;
+    background: aqua;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    #logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 20%;
-      height: 58px;
-      cursor: pointer;
-
-      &:hover {
-        border-bottom: 5px solid #fff;
-        background-color: #000;
-        height: 58px;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      color: #000;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      .nav {
+        width: 50%;
       }
     }
   }
