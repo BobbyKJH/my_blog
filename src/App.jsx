@@ -4,6 +4,7 @@ import IntroPage from "./page/IntroPage";
 import MainPage from "./page/MainPage";
 import PlanPage from "./page/PlanPage";
 import ProjectPage from "./page/ProjectPage";
+import DetailPage from "./page/DetailPage";
 
 const App = () => (
   <>
@@ -12,6 +13,7 @@ const App = () => (
       <Route path="/" element={<MainPage />} />
       <Route path="/intro" element={<IntroPage />} />
       <Route path="/project" element={<ProjectPage />} />
+      <Route path="/project/:id" element={<DetailPage />} />
       <Route path="/plan" element={<PlanPage />} />
     </Routes>
   </>
